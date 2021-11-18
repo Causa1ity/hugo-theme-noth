@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    {{ partial "basis/head.html" . }}
+    <title>{{ .Title | default .Site.Title }}</title>
+</head>
+<body class="flex flex-col bg-gray-100">
+{{ block "main" . }}
+{{ end }}
+</body>
+</html>

@@ -1,0 +1,11 @@
+baseURL = "https://causality.top"
+languageCode = "zh-cn"
+title = "Noth"
+
+summaryLength = 50
+hasCJKLanguage = true
+
+paginate = 7
+
+[build]
+useResourcesCache = "never"
