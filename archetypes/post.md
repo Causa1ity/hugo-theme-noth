@@ -3,7 +3,7 @@ title: {{ replace .Name "-" " " | title }}
 layout: post
 date: {{ .Date }}
 tags: []
-toc: false
+toc: true
 gitalk: true
 draft: true
 ---

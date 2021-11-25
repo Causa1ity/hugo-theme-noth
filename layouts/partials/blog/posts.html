@@ -1,0 +1,15 @@
+{{ range .Paginator.Pages }}
+<div class="border rounded-xl shadow-md p-4 bg-white mb-4">
+    <h3 class="mb-1 border-l-8 border-black px-2">
+        <a href="{{ .Permalink }}" class="font-title text-2xl hover:text-indigo-200">{{ .LinkTitle }}</a>
+    </h3>
+    <div class="mb-6">
+        {{ .PublishDate.Format "January 2, 2006" }}  |  {{ .Section }}
+    </div>
+    <p class="font-main text-lg mb-4">
+        {{- .Summary | plainify -}}
+    </p>
+</div>
+{{ end }}
+
+{{ partial "components/pagination.html" .Paginator  }}

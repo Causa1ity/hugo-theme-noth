@@ -1,0 +1,26 @@
+<div class="flex">
+    <div class="flex-auto flex justify-center">
+        <nav>
+            {{ with .Prev }}
+            <a href="{{ .URL }}" class="border bg-white border rounded p-1 hover:text-green-500">Prev</a>
+            {{ else }}
+            <a href="" class="border bg-white border rounded p-1 hover:text-green-500">Prev</a>
+            {{ end }}
+
+            {{ $currentPageNumber := .PageNumber }}
+            {{ range .Pagers }}
+            {{ if eq $currentPageNumber .PageNumber }}
+            <a href="{{ .URL }}" class="border border-black bg-black border rounded py-1 px-2 text-white hover:text-green-500">{{ .PageNumber }}</a>
+            {{ else }}
+            <a href="{{ .URL }}" class="border bg-white border rounded py-1 px-2 hover:text-green-500">{{ .PageNumber }}</a>
+            {{ end }}
+            {{ end }}
+
+            {{ with .Next }}
+            <a href="{{ .URL }}" class="border bg-white border rounded p-1 hover:text-green-500">Next</a>
+            {{ else }}
+            <a href="#" class="border bg-white border rounded p-1 hover:text-green-500">Next</a>
+            {{ end }}
+        </nav>
+    </div>
+</div>

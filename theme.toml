@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Noth"
+license = "MIT"
+licenselink = "https://github.com/causa1ity/hugo-theme-noth/blob/main/LICENSE"
+description = "A simple hugo noth wit tailwindcss."
+homepage = "http://causa1ity.top/devops/noth"
+tags = ["TailwindCSS"]
+features = []
+min_version = "0.89.4"
+
+[author]
+  name = "Causa1ity"
+  homepage = "https://causality.top/"

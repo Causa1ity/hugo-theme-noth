@@ -1,0 +1,33 @@
+<div class="border rounded-lg shadow-md">
+    <div class="h-32 flex rounded-t-lg text-white" style="background-image: url('{{ .Site.Params.background }}')">
+        <div class="m-auto">
+            <div class="text-center font-serif text-3xl my-2"><a href="{{ .Site.Home.URL }}">{{ .Site.Title }}</a></div>
+            <div class="text-center font-serif">{{ .Site.Params.motto }}</div>
+        </div>
+    </div>
+    <nav class="rounded-b-lg bg-white">
+        <ul class="py-2 ml-8">
+            <li class="my-2 content-center">
+                <a href="{{ .Site.Home.URL }}" class="hover:text-red-300"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;主页</a>
+            </li>
+<!--            <li class="my-2 content-center">-->
+<!--                <a href="" class="hover:text-red-300"><i class="fas fa-search"></i>&nbsp;&nbsp;&nbsp;搜索</a>-->
+<!--            </li>-->
+            <li class="my-2 content-center">
+                <a href="/metapages/archive/" class="hover:text-red-300"><i class="fas fa-scroll"></i>&nbsp;&nbsp;归档</a>
+            </li>
+            <li class="my-2 content-center">
+                <a href="/categories/" class="hover:text-red-300"><i class="fas fa-th"></i>&nbsp;&nbsp;&nbsp;分类</a>
+            </li>
+            <li class="my-2 content-center">
+                <a href="/tags/" class="hover:text-red-300"><i class="fas fa-tags"></i>&nbsp;&nbsp;标签</a>
+            </li>
+            <li class="my-2 content-center">
+                <a href="/metapages/link/" class="hover:text-red-300"><i class="fas fa-link"></i>&nbsp;&nbsp;&nbsp;链接</a>
+            </li>
+            <li class="my-2 content-center">
+                <a href="/metapages/message/" class="hover:text-red-300"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;留言</a>
+            </li>
+        </ul>
+    </nav>
+</div>

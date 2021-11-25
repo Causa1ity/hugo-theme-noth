@@ -1,0 +1,39 @@
+#TableOfContents {
+    color: gray;
+}
+#TableOfContents ul {
+    padding-left: 1rem;
+}
+#TableOfContents li>a:hover {
+    color: lightsalmon;
+}
+
+#timeline li {
+    display: flex;
+}
+#timeline .line {
+    display: flex;
+    flex-flow: column;
+}
+#timeline .line::before {
+    content: "";
+    width: .8rem;
+    height: .8rem;
+    background: #AAAAAA;
+    border-radius: 50%;
+    margin-top: .5rem;
+}
+#timeline .line::after {
+    content: "";
+    border-left: .4rem solid #EEEEEE;
+    flex-grow: 1;
+    margin-left: .2rem;
+    margin-top: .3rem;
+}
+#timeline section {
+    margin-left: 1rem;
+    margin-bottom: .6rem;
+}
+#timeline section time {
+    height: 100%;
+}

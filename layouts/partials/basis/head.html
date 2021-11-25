@@ -16,7 +16,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Lora&display=swap" rel="stylesheet">
 
 {{/* Font Awesome */}}
-<script src="https://kit.fontawesome.com/9cc9e9e3f3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 
-{{/* DocSearch */}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.3/dist/cdn/docsearch.min.css"/>
+{{/* Gitalk */}}
+{{ if .Params.gitalk }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+{{ end }}
+
+{{/* code-line: show line numbers of code block. */}}
+<script src="https://cdn.jsdelivr.net/npm/code-line"></script>

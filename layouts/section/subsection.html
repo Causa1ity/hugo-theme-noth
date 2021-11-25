@@ -8,6 +8,10 @@
     </div>
     <div class="flex-auto w-2/3">
         <div class="w-200 ml-2 mr-auto">
+            <div class="border rounded-xl shadow-md p-4 bg-white mb-4">
+                <h2 class="text-4xl font-serif text-center">{{ .Title }}</h2>
+                <p class="text-center pl-32">(共 {{ len .Pages }} 篇文章)</p>
+            </div>
             {{- partial "blog/posts.html" . -}}
         </div>
     </div>

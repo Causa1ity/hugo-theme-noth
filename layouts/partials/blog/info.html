@@ -1,0 +1,28 @@
+<div class="border-2 rounded-lg shadow-md bg-white py-4">
+    <div class="w-28 mx-auto py-2">
+        <img src="{{ .Site.Params.avatar }}" class="rounded-full" alt="avatar">
+        <div class="text-center my-2">{{ .Site.Params.author }}</div>
+    </div>
+    <div class="flex justify-center font-mono py-4">
+        <a href="/metapages/archive/" class="px-4 text-center hover:text-red-300">
+            <p class="text-lg">文章</p>
+            <p>{{ len .Site.RegularPages }}</p>
+        </a>
+        <a href="/categories/" class="px-4 text-center border-l border-r hover:text-red-300">
+            <p class="text-lg">分类</p>
+            <p>{{ len .Site.Taxonomies.categories }}</p>
+        </a>
+        <a href="/tags/" class="px-4 text-center hover:text-red-300">
+            <p class="text-lg">标签</p>
+            <p>{{ len .Site.Taxonomies.tags }}</p>
+        </a>
+    </div>
+    <div class="flex justify-center mt-4 py-2">
+        <a href="{{ .Site.Params.github }}">
+            <i class="fab fa-github text-2xl mx-2"></i>
+        </a>
+        <a href="mailto:{{ .Site.Params.email }}">
+            <i class="fas fa-envelope text-2xl mx-2"></i>
+        </a>
+    </div>
+</div>
