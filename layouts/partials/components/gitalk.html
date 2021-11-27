@@ -6,7 +6,7 @@
         repo: '{{ .Site.Params.gitalk.repo }}',
         owner: '{{ .Site.Params.gitalk.owner }}',
         admin: '{{ .Site.Params.gitalk.admin }}',
-        id: '{{ .Permalink }}',
+        id: '{{ .Params.gitalkId | default .Title }}',
         distractionFreeMode: false
     })
 
